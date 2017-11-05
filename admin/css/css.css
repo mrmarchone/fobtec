@@ -10,3 +10,48 @@ body{
     margin-bottom: 20px
 }
 /*end form*/
+/*start header*/
+.header{
+    background-color: black;
+    height: 50px;
+    position: fixed;
+    z-index: 99;
+}
+/*end header*/
+/*start side*/
+
+/*end side*/
+/*start dash*/
+.dash{
+    padding-top: 70px;
+}
+.dash img{
+    background-color: black;
+    width: 100px;
+}
+.dash h2{
+    color: #676767
+}
+.dash h2 span{
+    color: red;
+    text-transform: uppercase;
+}
+.boxes .box1 .feat{
+    padding: 10%;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.red{
+        background-color: #f44336 !important;
+}
+.blue{
+    background-color: #2196F3!important
+}
+.green{
+    background-color: #009688!important
+}
+.yellow {
+    background-color: #ff9800!important
+}
+/*end dash*/
