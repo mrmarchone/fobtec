@@ -1,0 +1,412 @@
+/*start header*/
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+@font-face {
+    src:url(Fonts/majalla.ttf);
+    font-family: majalla;
+    font-weight: bolder;
+}
+
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.padding40{
+     padding-top: 70px;
+     padding-bottom: 20px
+}
+.header{
+    height: auto;
+    background-image: url(../images/header2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 10%
+}
+.header .paragraph {
+    margin-top: 150px;
+    color: white;
+    font-weight: bolder
+}
+.header img{
+    margin:0 auto;
+}
+.header .paragraph button{
+    width: 200px;
+    border: none;
+    height: 80px;
+    background-color: red;
+    font-size: 20px;
+    font-weight: bolder;
+    transition: all 0.5s linear;
+    margin-bottom: 20px;
+    margin-top: -30px;
+}
+.header .paragraph button:hover{
+    background-color: #890000
+}
+.header .paragraph i{
+    padding: 1%;
+    transition: all 0.5s linear;
+}
+.header .paragraph i:hover{
+    color: red;
+    cursor: pointer;
+}
+.header .paragraph h2{
+    font-family: 'Abril Fatface', cursive;
+    color: #f9ffff;
+    word-spacing: 10px
+}
+/*End Header*/
+/*start box*/
+.box {
+    padding: 4% 0;
+    background-color: #f5f5f5;
+    font-family: majalla;
+}
+.box .box1 {
+    background-color: #333;
+    padding:0 2%;
+    color: #EEE
+}
+.box .paragraph h2{
+    color: #774747;
+    font-weight: bolder;
+}
+.box .paragraph ul li{
+    display: block;
+    padding: 2%;
+    background-color: white;
+    margin-bottom: 10px
+}
+.box .box1 i{
+    margin-top: 10px;
+}
+.box .box1:hover{
+    cursor: pointer;
+}
+.box .boxes:not(:last-of-type){
+    margin-bottom: 20px
+}
+.box .boxes .paragraph{
+    background-color: white;
+    padding: 3%;
+    display: none;
+}
+/*end box*/
+/*Start Home*/
+@media (max-width:762px) {
+    .home .boxes{
+        border-right: none
+    }
+}
+.home .boxes {
+    height: 600px;
+    background-color: #e3ebf2;
+    padding: 4% 0;
+    transition: all 0.5s linear;
+    color: #333
+}
+.home .boxes:hover{
+    background-color: red;
+    cursor: pointer;
+    color: white
+}
+.home .boxes:hover i{
+    color: white !important
+}
+.home .boxes:hover button{
+    background-color: white;
+    color: red
+}
+.home .boxes i{
+    color: red
+}
+.home .boxes button{
+    background-color: red;
+    border:none;
+    width: 200px;
+    padding: 5%;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    transition: all 0.5s linear
+}
+
+.home .boxes .contain{
+    margin-top: 100px
+}
+/*end Home*/
+/*Start About*/
+.about{
+    padding: 4% 0;
+    background-color: #333;
+    color: #c5c5c5;
+    font-family: majalla;
+}
+/*End About*/
+/*start Vip*/
+.vip {
+    background-color: #630503;
+    color: white;
+    font-weight: bolder;
+}
+.vip .sections h2{
+    margin-bottom: 20px;
+    font-family: majalla;
+}
+.vip .sections .paragraph p {
+    margin-bottom: 50px;
+     font-family: majalla;
+     font-weight: bolder;
+}
+.vip .sections .paragraph a{
+    color: white;
+    font-family: majalla;
+}
+/*end Vip*/
+/*start success*/
+.success {
+    padding: 4% 0;
+    color: #333
+}
+.success .paragraph{
+    margin-top: 20px;
+}
+.success .paragraph h2{
+     font-family: majalla;
+    font-size: 30pt;
+    letter-spacing: 8px;
+    margin-bottom: 30px;
+    font-weight: bolder
+}
+.success .paragraph h4{
+     font-family: majalla;
+    font-size: 18pt;
+    margin-bottom: 30px
+}
+.success .paragraph button{
+    width: 200px;
+    padding: 2%;
+    background-color: red;
+    border:none;
+    color:white;
+    font-weight: bolder;
+    font-size: 1.5em;
+    transition: all 0.5s linear;
+     font-family: majalla;
+}
+.success .paragraph button:hover{
+    background-color: #890000
+}
+/*End success*/
+/*Start choose*/
+.choose {
+    padding: 4% 0;
+}
+.choose .choose1 h2{
+     font-family: majalla;
+}
+.choose .choose1 .paragraph h3{
+     font-family: majalla;
+}
+/*end choose*/
+/*start what*/
+.what {
+    padding: 4% 0
+}
+.what  h2{
+     font-family: majalla;
+    font-size: 22pt
+}
+.what .sections h4{
+     font-family: majalla;
+    font-size: 1.5em;
+}
+/*end what*/
+/*start serv*/
+.serv {
+    padding: 4% 0;
+    background-color: #d0d0d0
+}
+.serv h2{
+    font-family: majalla;
+    font-size: 25pt;
+    margin-bottom: 30px
+}
+.serv .div{
+    margin-bottom: 30px
+}
+.serv .div h3{
+     font-family: majalla;
+    font-size: 1.5em;
+}
+.serv .div .metter{
+    width: 100%;
+    height: 15px;
+    background-color: #fff;
+}
+.serv .div .metter .submeter1{
+    width: 65%;
+    height: 100%;
+    background-color: red
+}
+.serv .div .metter .submeter2{
+    width: 30%;
+    height: 100%;
+    background-color: red
+}
+.serv .div .metter .submeter3{
+    width: 53%;
+    height: 100%;
+    background-color: red
+}
+/*end serv*/
+/*start get*/
+.get{
+    padding: 4% 0
+}
+.get h2{
+     font-family: majalla;
+}
+.get form input, textarea{
+    border: none;
+    border-bottom: 1px solid grey;
+    padding: 3%;
+    margin-bottom: 10px
+}
+.get form input:focus, textarea{
+    outline: none
+}
+.get form button{
+    width: 200px;
+    height: 90px;
+    background-color: #CCC;
+    border: none;
+    font-weight: bolder;
+    color: white;
+    font-size: 15pt
+}
+/*end get*/
+/*start service*/
+.service {
+    background-color: #333;
+    font-family: majalla;
+}
+.service h2{
+    color: white;
+    font-weight: bolder;
+}
+.service .sectionone .feat{
+    background-color: white;
+    padding: 2%;
+    border-top:10px solid lightblue;
+    margin-bottom: 5%;
+}
+.service .sectionone h1{
+    font-size: 30px;
+    font-weight: bolder;
+}
+/*end service*/
+/*start footer*/
+.footer{
+    padding: 2% 0;
+    background-color: #101010;
+    color: white;
+}
+
+.footer ul{
+    margin-top: 80px;
+    font-size: 20px;
+}
+.footer ul li a{
+    color: red;
+    transition: all 0.5s linear
+}
+.footer ul li a:hover{
+    text-decoration: none;
+    color: white
+}
+/*end footer*/
+/*start contact*/
+.contact {
+    background-color: #222222;
+}
+.contact .form form input:not([type=submit]){
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+}
+.contact .form{
+    max-width: 500px;
+    margin: 120px 0;
+}
+.contact .address{
+    color: #f5f5f5;
+    margin-top: 100px
+}
+.contact .address .feat{
+    padding: 1%;
+    border:1px solid lightblue;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+/*end contact*/
+/*fonts*/
+.h1, h1, h2, p, .h2{
+    font-family: majalla;
+}
+/*end fonts*/
+/*start aboutmain*/
+.aboutmain .feat, .feat2{
+    padding: 3%;
+    background-color: #333;
+    border-radius: 20px;
+    margin: 10px;
+    color: #dcd5d5;
+    box-shadow: 5px 5px 15px grey;
+}
+/*end aboutmain*/
+/*start customer*/
+
+/*end customer*/
+/*start solu*/
+.solu{
+    overflow: hidden;
+}
+.solu h2{
+    font-weight: bolder;
+    color: #333
+}
+.solu p{
+    font-weight: bolder;
+    color: #555
+}
+.solu .feat{
+    background-color: #286090;
+    padding:3% 4%;
+    margin: 2%;
+    height: 150px;
+    border-radius: 20px;
+    color: #f5f5f5
+}
+/*end solu*/
+/*start news*/
+.blog{
+    background-color: #333;
+    overflow: hidden;
+}
+.blog h2{
+    font-weight: bolder;
+    letter-spacing: 6px;
+}
+.blog .news .feat{
+    padding:10%;
+    background-color: white;
+    margin-bottom: 20px;
+    height:auto;
+    border-radius: 20px
+}
+.blog .news .feat h2{
+   color: #3350b9;
+}
+/*end news*/

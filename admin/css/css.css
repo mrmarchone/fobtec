@@ -1,0 +1,12 @@
+/*start form*/
+body{
+    background-color: #eee;
+}
+.login .form .feat{
+    max-width: 500px;
+    margin:300px auto
+}
+.login .form .feat input{
+    margin-bottom: 20px
+}
+/*end form*/
