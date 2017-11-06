@@ -74,18 +74,13 @@ if (isset($_SESSION['username'])) {?>
                 </div>
             </div>
             <div class="box1 col-md-3 col-xs-12">
-                <div class="feat red">
-                    <i class="fa fa-plus fa-4x pull-right" aria-hidden="true"></i>
-                    <h3>Add users</h3>
-                    <div class="clearfix"></div>
-                </div>
-            </div>
-            <div class="box1 col-md-3 col-xs-12">
-                <div class="feat blue">
-                    <i class="fa fa-edit fa-4x pull-right"></i>
-                    <h3>Edit users</h3>
-                    <div class="clearfix"></div>
-                </div>
+                <a href="adduser.php">
+                    <div class="feat red">
+                        <i class="fa fa-plus fa-4x pull-right" aria-hidden="true"></i>
+                        <h3>Add users</h3>
+                        <div class="clearfix"></div>
+                    </div>
+                </a>
             </div>
             <div class="box1 col-md-3 col-xs-12">
                 <a href="addarticle.php">
@@ -95,57 +90,6 @@ if (isset($_SESSION['username'])) {?>
                         <div class="clearfix"></div>
                     </div>
                 </a>
-            </div>
-            <div class="box1 col-md-3 col-xs-12">
-                <a href="editarticle.php">
-                    <div class="feat yellow">
-                        <i class="fa fa-edit fa-4x pull-right"></i>
-                        <h3>Edit article</h3>
-                        <div class="clearfix"></div>
-                    </div>
-                </a>
-            </div>
-            <div class="box1 col-md-3 col-xs-12">
-                <div class="feat red">
-                    <i class="fa fa-edit fa-4x pull-right"></i>
-                    <h3>Edit About</h3>
-                    <div class="clearfix"></div>
-                </div>
-            </div>
-            <div class="box1 col-md-3 col-xs-12">
-                <div class="feat blue">
-                    <i class="fa fa-edit fa-4x pull-right"></i>
-                    <h3>Edit Contact</h3>
-                    <div class="clearfix"></div>
-                </div>
-            </div>
-            <div class="box1 col-md-3 col-xs-12">
-                <div class="feat green">
-                    <i class="fa fa-edit fa-4x pull-right"></i>
-                    <h3>Edit Customer</h3>
-                    <div class="clearfix"></div>
-                </div>
-            </div>
-            <div class="box1 col-md-3 col-xs-12">
-                <div class="feat yellow">
-                    <i class="fa fa-edit fa-4x pull-right"></i>
-                    <h3>Edit Service</h3>
-                    <div class="clearfix"></div>
-                </div>
-            </div>
-            <div class="box1 col-md-6 col-xs-12">
-                <div class="feat green">
-                    <i class="fa fa-edit fa-4x pull-right"></i>
-                    <h3>Edit Solutions</h3>
-                    <div class="clearfix"></div>
-                </div>
-            </div>
-            <div class="box1 col-md-6 col-xs-12">
-                <div class="feat green">
-                    <i class="fa fa-edit fa-4x pull-right"></i>
-                    <h3>Edit Home</h3>
-                    <div class="clearfix"></div>
-                </div>
             </div>
         </div>
     </div>

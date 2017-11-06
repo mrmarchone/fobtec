@@ -132,3 +132,12 @@ video{
     margin-bottom: 10px
 }
 /*end posts*/
+/*add user*/
+.adduser .form {
+    max-width: 700px;
+    margin: 100px auto;
+}
+.adduser .form form input{
+    margin-bottom: 10px
+}
+/*end add user*/

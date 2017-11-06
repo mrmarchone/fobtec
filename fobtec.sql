@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.7.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 06, 2017 at 06:39 PM
--- Server version: 10.1.28-MariaDB
--- PHP Version: 7.0.24
+-- Generation Time: Nov 06, 2017 at 11:15 PM
+-- Server version: 10.1.25-MariaDB
+-- PHP Version: 5.6.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -56,18 +56,6 @@ CREATE TABLE `blogpage` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `blogpage`
---
-
-INSERT INTO `blogpage` (`ID`, `img`, `title`, `details`) VALUES
-(1, '104__and wooden flooring  3D house Free 3D house pictures and wallpaper.jpg', 'Hello', 'Hello				'),
-(2, '9207_shutterstock_144561071.jpg', 'Photo2', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standar'),
-(3, '4453_shutterstock_144561071.jpg', 'Photo2', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standar'),
-(4, '4486_shutterstock_144561071.jpg', 'Photo2', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standar'),
-(5, '452_Oryx.mp4', 'title', 'title TEST				'),
-(6, '6257__and wooden flooring  3D house Free 3D house pictures and wallpaper.jpg', 'Hello', 'TEXT2\r\n');
-
---
 -- Indexes for dumped tables
 --
 
@@ -94,13 +82,11 @@ ALTER TABLE `blogpage`
 --
 ALTER TABLE `admins`
   MODIFY `ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
 --
 -- AUTO_INCREMENT for table `blogpage`
 --
 ALTER TABLE `blogpage`
-  MODIFY `ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-COMMIT;
+  MODIFY `ID` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

@@ -22,7 +22,7 @@ if (isset($_SESSION['username'])) {?>
 			    <?php
 			    $stmt = $con->prepare("SELECT * FROM blogpage");
 			    $stmt->execute();
-			    $row = $stmt->fetchAll();
+			    $row 	= $stmt->fetchAll();
 			    foreach ($row as $key => $value) {
 			    	$end = explode('.', $value['img']);
 					echo '<tr>';
@@ -39,10 +39,11 @@ if (isset($_SESSION['username'])) {?>
 			      	echo '<td>' . $value['title'] . '</td>';
 			      	echo '<td>' . $value['details'] . '</td>';
 			      	echo '<td>';
-			      	echo '<form action="remove.php" method="POST">';
+			      	echo '<form action="remove.php" method="GET">';
+			      	echo '<input type="hidden" value="' . $value['ID'] .'" name="ID">';
 			      	echo '<input type="submit" class="btn btn-danger col-xs-12" value="Remove">';
 			      	echo '</form>';
-			      	echo '<form action="editarticle.php" method="POST">';
+			      	echo '<form action="editarticle.php" method="GET">';
 			      	echo '<input type="submit" class="btn btn-success col-xs-12" value="Edit">';
 			      	echo '</form>';
 			      	echo '</td>';
