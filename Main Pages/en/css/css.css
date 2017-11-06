@@ -2,14 +2,15 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
 @font-face {
-    src:url(Fonts/majalla.ttf);
-    font-family: majalla;
+    src:url(Fonts/MyriadPro-Regular.otf);
+    font-family: MyriadPro;
     font-weight: bolder;
 }
 
 *{
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    font-family: MyriadPro;
 }
 .padding40{
      padding-top: 70px;
@@ -142,7 +143,6 @@
     padding: 4% 0;
     background-color: #333;
     color: #c5c5c5;
-    font-family: majalla;
 }
 /*End About*/
 /*start Vip*/
@@ -353,7 +353,7 @@
 /*end contact*/
 /*fonts*/
 .h1, h1, h2, p, .h2{
-    font-family: majalla;
+    font-family: MyriadPro;
 }
 /*end fonts*/
 /*start aboutmain*/
@@ -395,16 +395,26 @@
     background-color: #333;
     overflow: hidden;
 }
+.blog .feat p{
+    max-height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
 .blog h2{
     font-weight: bolder;
-    letter-spacing: 6px;
+    letter-spacing: 2px;
 }
 .blog .news .feat{
     padding:10%;
     background-color: white;
     margin-bottom: 20px;
     height:auto;
-    border-radius: 20px
+    border-radius: 20px;
+    height: 500px;
+}
+.blog .news .feat img, video{
+    max-height: 190px;
+    width: 100%;
 }
 .blog .news .feat h2{
    color: #3350b9;

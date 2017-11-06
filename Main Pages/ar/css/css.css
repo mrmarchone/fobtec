@@ -2,14 +2,15 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
 @font-face {
-    src:url(Fonts/majalla.ttf);
-    font-family: majalla;
+    src:url(Fonts/GESSTwoMedium-Medium.otf);
+    font-family: arabic;
     font-weight: bolder;
 }
 
 *{
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    font-family: arabic;
 }
 .padding40{
      padding-top: 70px;

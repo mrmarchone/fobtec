@@ -13,9 +13,27 @@ if (isset($_SESSION['username'])) {
             <div class="form col-xs-12">
                 <div class="feat">
                     <form action="login.php" method="post">
-                        <input type="text" placeholder="Email or username" autocomplete="off" required class="form-control" name="user"/>
-                        <input type="password" placeholder="Password" autocomplete="off" required class="form-control" name="password"/>
-                        <input type="submit" value="Login" autocomplete="off" required class="btn btn-success form-control"/>
+                        <h2 class="h1 text-center">ADMIN LOGIN</h2>
+                        <input 
+                            type="text" 
+                            placeholder="Email or username" 
+                            autocomplete="off" 
+                            required 
+                            class="form-control" 
+                            name="user"/>
+                        <input 
+                            type="password" 
+                            placeholder="Password" 
+                            autocomplete="off" 
+                            required 
+                            class="form-control" 
+                            name="password"/>
+                        <input 
+                            type="submit" 
+                            value="Login" 
+                            autocomplete="off" 
+                            required 
+                            class="btn btn-success form-control"/>
                     </form>
                     <?php
                     if (isset($_POST['user']) && isset($_POST['password'])) {

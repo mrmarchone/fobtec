@@ -1,10 +1,20 @@
 /*start form*/
+a{
+    color: white
+}
+a:hover{
+    text-decoration: none;
+    color: white
+}
 body{
     background-color: #eee;
 }
 .login .form .feat{
     max-width: 500px;
     margin:300px auto
+}
+.login .form form h2{
+    font-weight: bolder;
 }
 .login .form .feat input{
     margin-bottom: 20px
@@ -13,9 +23,18 @@ body{
 /*start header*/
 .header{
     background-color: black;
-    height: 50px;
     position: fixed;
     z-index: 99;
+}
+.header a{
+    color: white;
+}
+.header a:hover{
+    text-decoration: none;
+    color: red
+}
+.header img{
+    margin-top: 10px
 }
 /*end header*/
 /*start side*/
@@ -23,7 +42,7 @@ body{
 /*end side*/
 /*start dash*/
 .dash{
-    padding-top: 70px;
+    padding-top: 100px;
 }
 .dash img{
     background-color: black;
@@ -37,10 +56,13 @@ body{
     text-transform: uppercase;
 }
 .boxes .box1 .feat{
-    padding: 10%;
+    padding: 4%;
     color: white;
     margin-bottom: 20px;
     border-radius: 20px;
+}
+.boxes .box1 .feat:hover{
+    cursor: pointer;
 }
 .red{
         background-color: #f44336 !important;
@@ -55,3 +77,57 @@ body{
     background-color: #ff9800!important
 }
 /*end dash*/
+/*start add article*/
+.addarticle form{
+    max-width: 400px;
+    margin: 250px auto;
+    background-color: #333;
+    padding:2%;
+    border-radius: 20px
+}
+.addarticle form input{
+    margin: 30px 0;
+}
+.addarticle form h2{
+    color: #8e8e8e;
+    font-weight: bolder
+}
+/*end add article*/
+/*start posts*/
+.posts .divtable{
+    max-width: 800px;
+    margin: 100px auto;
+}
+table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+video{
+    width: 100px;
+}
+.posts input[type=submit]{
+    margin-bottom: 10px
+}
+/*end posts*/
