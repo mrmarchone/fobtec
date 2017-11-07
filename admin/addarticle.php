@@ -5,6 +5,7 @@ include"header.php";
 ?>
 <?php
 if (isset($_SESSION['username'])) {?>
+<?php include"navbar.php";?>
 <div class="addarticle col-xs-12 text-center">
 	<div class="feat">
 		<form action="addarticle.php" method="POST" enctype="multipart/form-data">

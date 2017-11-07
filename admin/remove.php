@@ -2,7 +2,6 @@
 session_start();
 include"header.php";
 include"connect.php";
-include"emptytable.php";
 ?>
 <?php
 if (isset($_GET['ID'])) {

@@ -5,17 +5,17 @@ include"header.php";
 ?>
 <?php
 if (isset($_SESSION['username'])) {?>
-
-<div class="header col-xs-12">
-    <h2 class="pull-right"><a href="logout.php">Logout</a></h2>
-    <div class="logo col-sm-3 pull-left">
-        <img src="images/white.png" class="img-responsive" width="100">
-    </div>
-    <div class="clearfix"></div>
-</div>
+<?php include"navbar.php";?>
 <div class="dash col-xs-12 text-center">
-    <img src="images/profile.png" class="img-circle">
-    <h2>Welcome Dr <span><?php echo $_SESSION['username']?></span></h2>
+    <?php
+    $stmt = $con->prepare("SELECT * FROM admins WHERE ID=?");
+    $stmt->execute(array($_SESSION['ID']));
+    $row = $stmt->fetchAll();
+    foreach ($row as $key => $value) {
+        echo '<img src="images/users/'. $value['img'] .'" class="img-circle" width="100px">';
+    }
+    ?>
+    <h2>Welcome <span><?php echo $_SESSION['username']?></span></h2>
 </div>
 <div class="dashcontent col-sm-6 col-xs-12">
     <div class="container">
@@ -64,14 +64,21 @@ if (isset($_SESSION['username'])) {?>
                 </div>
             </div>
             <div class="box1 col-md-3 col-xs-12">
-                <div class="feat yellow">
-                    <ul class="list-inline">
-                        <li><i class="fa fa-users fa-4x" aria-hidden="true"></i></li>
-                        <li class="pull-right"><h2>555</h2></li>
-                        <div class="clearfix"></div>
-                    </ul>
-                    <h3>Users</h3>
-                </div>
+                <a href="users.php">
+                    <div class="feat yellow">
+                        <ul class="list-inline">
+                            <li><i class="fa fa-users fa-4x" aria-hidden="true"></i></li>
+                                <?php
+                                $stmt = $con->prepare("SELECT ID FROM admins");
+                                $stmt->execute();
+                                $row = $stmt->fetchAll();
+                                echo '<li class="pull-right"><h2>' . sizeof($row) . '</h2></li>';
+                                ?>
+                            <div class="clearfix"></div>
+                        </ul>
+                        <h3>Users</h3>
+                    </div>
+                </a>
             </div>
             <div class="box1 col-md-3 col-xs-12">
                 <a href="adduser.php">

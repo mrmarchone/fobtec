@@ -1,11 +1,12 @@
 <?php include"header.php";?>
 <?php include"nav.php";?>
 <?php include"../../admin/connect.php";?>
+<div id="fb-root"></div>
 <div class="blog padding40">
 	<div class="container">
 		<div class="row">
 			<div class="paragraph text-center">
-				<h2>News</h2>
+				<h2 style="color:white">News</h2>
 			</div>
 			<div class="news col-md-4 col-xs-12 wow bounceInUp" data-wow-offset="100">
 				<div class="feat">

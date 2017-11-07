@@ -5,6 +5,7 @@ include"connect.php";
 ?>
 <?php 
 if (isset($_SESSION['username'])) {?>
+<?php include"navbar.php";?>
 	<div class="posts col-xs-12">
 		<div class="divtable">
 			<h2 class="h1 text-center">All Posts</h2>
@@ -30,10 +31,10 @@ if (isset($_SESSION['username'])) {?>
 					if (end($end) == 'mp4') {
 							echo '<td><video src="images/'. $value['img'] .'" autoplay></video></td>';
 					} else {
-						if (file_exists('images/' . $key['img'])) {
-							echo '<td><img src="images/profile.png" class="img-responsive" width="50px"></td>';
+						if (file_exists('images/' . $value['img'])) {
+							echo '<td><img src="images/' . $value['img'] . '" class="img-responsive" width="150px"></td>';
 						} else {
-							echo '<td><img src="images/' . $key['img'] . '" class="img-responsive" width="50px"></td>';
+							echo '<td><img src="images/profile.png" class="img-responsive" width="50px"></td>';
 						}
 				}
 			      	echo '<td>' . $value['title'] . '</td>';
@@ -44,7 +45,8 @@ if (isset($_SESSION['username'])) {?>
 			      	echo '<input type="submit" class="btn btn-danger col-xs-12" value="Remove">';
 			      	echo '</form>';
 			      	echo '<form action="editarticle.php" method="GET">';
-			      	echo '<input type="submit" class="btn btn-success col-xs-12" value="Edit">';
+			      	echo '<input type="hidden" value="' . $value['ID'] .'" name="ID">';
+			      	echo '<input type="submit" class="btn btn-success col-xs-12" value="EDIT">';
 			      	echo '</form>';
 			      	echo '</td>';
 			    	echo '</tr>';
