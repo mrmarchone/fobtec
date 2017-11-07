@@ -31,7 +31,7 @@ if (isset($_SESSION['username'])) {?>
 					}
 					if (empty($errors) == true) {
 						move_uploaded_file($file_tmpName, 'images/'.$image);
-						$stmt = $con->prepare('INSERT INTO blogpage (img, title, details) VALUES (?, ?, ?)');
+						$stmt = $con->prepare('INSERT INTO blogpage (img, title, details, time) VALUES (?, ?, ?, NOW())');
 						$stmt->execute(array($image, $title, $details));
 						echo "<h1 class='alert alert-success'>File Uploaded Success</h1>";
 					} else {

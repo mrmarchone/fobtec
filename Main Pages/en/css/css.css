@@ -1,12 +1,57 @@
 /*start header*/
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
-@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+@import url('https://fonts.googleapis.com/css?family=Amiri');
+padding50{
+    padding: 50px 0;
+}
+body{
+        font-family: 'Amiri' !important;
+}
 *{
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+.navbar-inverse .navbar-toggle {
+    border-color: #333;
+    margin-top: 5%;
+}
+.dropdown-menu > li > a {
+    font-size: large;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #ffffff;
+}
+.container-fluid {
+    border-top:5px solid red;
+}
+.nav {
+    font-size: 20px;
+}
+@media (min-width:768px) and (max-width:1205px) {
+    .nav {
+        font-weight: 100 !imporant;
+        font-size: 10px
+    }
+    .padding40{
+        padding-top: 290px
+    }
+    .contact{
+        padding-top: 120px !important
+    }
+    .navbar-nav{
+    padding: 3% 0% !important
+}
+}
+.navbar-nav{
+    padding: 1%
+}
+.navbar-inverse .navbar-nav > li{
+    padding: 1% 0;
+}
+.navbar-inverse .navbar-nav > li:hover{
+    background-color: red
+}
 .padding40{
-     padding-top: 70px;
+     padding-top: 130px;
      padding-bottom: 20px
 }
 .header{
@@ -52,10 +97,17 @@
     word-spacing: 10px
 }
 /*End Header*/
+/*start newsslider*/
+.newsslider{
+    background-color: #333;
+    color: white
+}
+/*end Newsslider*/
 /*start box*/
 .box {
     padding: 4% 0;
     background-color: #f5f5f5;
+    font-family: majalla;
 }
 .box .box1 {
     background-color: #333;
@@ -135,6 +187,7 @@
     padding: 4% 0;
     background-color: #333;
     color: #c5c5c5;
+    font-family: majalla;
 }
 /*End About*/
 /*start Vip*/
@@ -145,13 +198,16 @@
 }
 .vip .sections h2{
     margin-bottom: 20px;
+    font-family: majalla;
 }
 .vip .sections .paragraph p {
     margin-bottom: 50px;
+     font-family: majalla;
      font-weight: bolder;
 }
 .vip .sections .paragraph a{
     color: white;
+    font-family: majalla;
 }
 /*end Vip*/
 /*start success*/
@@ -163,12 +219,14 @@
     margin-top: 20px;
 }
 .success .paragraph h2{
+     font-family: majalla;
     font-size: 30pt;
     letter-spacing: 8px;
     margin-bottom: 30px;
     font-weight: bolder
 }
 .success .paragraph h4{
+     font-family: majalla;
     font-size: 18pt;
     margin-bottom: 30px
 }
@@ -181,6 +239,7 @@
     font-weight: bolder;
     font-size: 1.5em;
     transition: all 0.5s linear;
+     font-family: majalla;
 }
 .success .paragraph button:hover{
     background-color: #890000
@@ -191,8 +250,10 @@
     padding: 4% 0;
 }
 .choose .choose1 h2{
+     font-family: majalla;
 }
 .choose .choose1 .paragraph h3{
+     font-family: majalla;
 }
 /*end choose*/
 /*start what*/
@@ -200,9 +261,11 @@
     padding: 4% 0
 }
 .what  h2{
+     font-family: majalla;
     font-size: 22pt
 }
 .what .sections h4{
+     font-family: majalla;
     font-size: 1.5em;
 }
 /*end what*/
@@ -212,6 +275,7 @@
     background-color: #d0d0d0
 }
 .serv h2{
+    font-family: majalla;
     font-size: 25pt;
     margin-bottom: 30px
 }
@@ -219,6 +283,7 @@
     margin-bottom: 30px
 }
 .serv .div h3{
+     font-family: majalla;
     font-size: 1.5em;
 }
 .serv .div .metter{
@@ -247,7 +312,7 @@
     padding: 4% 0
 }
 .get h2{
-     
+     font-family: majalla;
 }
 .get form input, textarea{
     border: none;
@@ -271,7 +336,7 @@
 /*start service*/
 .service {
     background-color: #333;
-
+    font-family: majalla;
 }
 .service h2{
     color: white;
@@ -279,13 +344,14 @@
 }
 .service .sectionone .feat{
     background-color: white;
-    padding: 2%;
+    padding: 5%;
     border-top:10px solid lightblue;
     margin-bottom: 5%;
+    font-size: 10px;
 }
-.service .sectionone h1{
-    font-size: 30px;
-    font-weight: bolder;
+.service .sectionone .feat h1 a{
+    text-decoration: none;
+    color: #333
 }
 /*end service*/
 /*start footer*/
@@ -294,45 +360,52 @@
     background-color: #101010;
     color: white;
 }
-
+#map {
+    height: 300px;
+}
 .footer ul{
-    margin-top: 80px;
     font-size: 20px;
+    margin-bottom: 30px
 }
 .footer ul li a{
-    color: red;
-    transition: all 0.5s linear
+    color: white;
+    transition: all 0.5s linear;
+    font-size: 23px
+}
+.footer ul li i{
+    margin-right: 10px
 }
 .footer ul li a:hover{
     text-decoration: none;
-    color: white
+    color: red
 }
 /*end footer*/
 /*start contact*/
 .contact {
-    background-color: #222222;
+    background-color: #545454;
+    padding: 4% 0;
 }
 .contact .form form input:not([type=submit]){
     margin-bottom: 20px;
     background-color: #f5f5f5;
 }
 .contact .form{
-    max-width: 500px;
-    margin: 120px 0;
+    margin-top: 120px
 }
 .contact .address{
     color: #f5f5f5;
-    margin-top: 100px
+    margin-top: 120px;
 }
 .contact .address .feat{
-    padding: 1%;
     border:1px solid lightblue;
     margin-bottom: 10px;
     border-radius: 20px;
+    padding: 0.2%
 }
 /*end contact*/
 /*fonts*/
 .h1, h1, h2, p, .h2{
+    font-family: majalla;
 }
 /*end fonts*/
 /*start aboutmain*/
@@ -343,6 +416,7 @@
     margin: 10px;
     color: #dcd5d5;
     box-shadow: 5px 5px 15px grey;
+    min-height: 400px;
 }
 /*end aboutmain*/
 /*start customer*/
@@ -374,14 +448,9 @@
     background-color: #333;
     overflow: hidden;
 }
-.blog .feat p{
-    max-height: 200px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
 .blog h2{
     font-weight: bolder;
-    letter-spacing: 2px;
+    letter-spacing: 6px;
 }
 .blog .news .feat{
     padding:10%;
@@ -389,13 +458,36 @@
     margin-bottom: 20px;
     height:auto;
     border-radius: 20px;
-    height: 500px;
+    min-height: 500px
 }
-.blog .news .feat img, video{
-    max-height: 190px;
-    width: 100%;
+.blog .news .feat span{
+    font-weight: bolder
+}
+.blog .news .feat p{
+    overflow-y: scroll
 }
 .blog .news .feat h2{
    color: #3350b9;
 }
 /*end news*/
+/*start team*/
+.team {
+    background-color: #eee
+}
+
+.team hr{
+    border: 2px solid red
+}
+.team .persons{
+    margin-bottom: 150px
+}
+.team .persons p{
+    font-size: 23px
+}
+/*end team*/
+.success{
+    padding-top: 140px;
+}
+.success img{
+    margin-bottom: 50px
+}

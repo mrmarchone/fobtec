@@ -16,6 +16,7 @@ if (isset($_SESSION['username'])) {?>
 			      <th>Image/Video</th>
 			      <th>Title</th>
 			      <th>Details</th>
+                  <th>Date</th>
 			      <th>Options</th>
 			    </tr>
 			  </thead>
@@ -34,11 +35,12 @@ if (isset($_SESSION['username'])) {?>
 						if (file_exists('images/' . $value['img'])) {
 							echo '<td><img src="images/' . $value['img'] . '" class="img-responsive" width="150px"></td>';
 						} else {
-							echo '<td><img src="images/profile.png" class="img-responsive" width="50px"></td>';
+							echo '<td><img src="images/white2.png" class="img-responsive" width="130px"></td>';
 						}
 				}
 			      	echo '<td>' . $value['title'] . '</td>';
 			      	echo '<td>' . $value['details'] . '</td>';
+                    echo '<td>' . $value['time'] . '</td>';
 			      	echo '<td>';
 			      	echo '<form action="remove.php" method="GET">';
 			      	echo '<input type="hidden" value="' . $value['ID'] .'" name="ID">';

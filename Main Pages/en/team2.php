@@ -3,8 +3,8 @@
 <div class="team col-xs-12 padding40" style="overflow: hidden;">
 	<div class="container">
 		<div class="row">
-            <h2 class="h1">Management Team</h2>
-            <div class="persons col-xs-12 text-center wow bounceInLeft pull-right" data-wow-offset="100">
+            <h2 class="h1">Experts and consultants</h2>
+                        <div class="persons col-xs-12 text-center wow bounceInLeft pull-right" data-wow-offset="100">
 				<div class="feat">
                     <h2 class="text-justify">Atef Al Samman - Managing Director and Managing Director</h2>
                     <hr>

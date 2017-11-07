@@ -24,7 +24,7 @@
         </li>
         <li><a href="blog.php">المدونة</a></li>
         <li><a href="contactus.php">اتصل بنا</a></li>
-          <li><a href="contactus.php">الشركاء</a></li>
+          <li><a href="ourpartners.php">الشركاء</a></li>
         <li><a href="customer.php">عملائنا</a></li>
         <li><a href="solutions.php">الحلول</a></li>
         <li class="dropdown">

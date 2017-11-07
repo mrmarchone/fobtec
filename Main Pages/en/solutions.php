@@ -5,44 +5,44 @@
 		<div class="row">
 			<h2 class="h1 text-center">Solutions</h2>
 			<p class="lead text-center">
-				We adopt improvement strategy consist of seven steps.
+			 We adopt a seven-step optimization strategy.
 				<br>
-				Steps are applied according to the need of the customer in this way:
+                The steps are applied according to the client's need in this way:
 			</p>
 			<div class="steps wow bounceInUp">
 				<div class="stepsone col-xs-12">
 					<div class="feat">
-						<h3 class="h2">1.Analyse the current situation and determine the for development</h3>
+						<h3 class="h2">1- Analysis of the current situation and identification of development</h3>
 					</div>
 				</div>
 				<div class="stepsone col-md-6 col-xs-12">
 					<div class="feat">
-						<h3 class="h2">2.Design solutions and support customers to choose the best solution</h3>
+						<h3 class="h2">2- Design solutions and support for customers to choose the best solution</h3>
 					</div>
 				</div>
 				<div class="stepsone col-md-6 col-xs-12">
 					<div class="feat">
-						<h3 class="h2">3.Estimate the cost of the development and determine the steps of application</h3>
+						<h3 class="h2">3- Estimating the cost of development and determining the implementation steps</h3>
 					</div>
 				</div>
 				<div class="stepsone col-md-6 col-xs-12">
 					<div class="feat">
-						<h3 class="h2">4.Managing the chaning and developing process</h3>
+						<h3 class="h2">4- Managing the changing and developing process</h3>
 					</div>
 				</div>
 				<div class="stepsone col-md-6 col-xs-12">
 					<div class="feat">
-						<h3 class="h2">5.Apply the best solutions (software-Devices-network)</h3>
+						<h3 class="h2">5- Applying the best solutions (software - hardware - networking)</h3>
 					</div>
 				</div>
 				<div class="stepsone col-md-6 col-xs-12">
 					<div class="feat">
-						<h3 class="h2">6.Review the application of solution</h3>
+						<h3 class="h2">6- Review the implementation of the solution</h3>
 					</div>
 				</div>
 				<div class="stepsone col-md-6 col-xs-12">
 					<div class="feat">
-						<h3 class="h2">7.Continuous support even after the application of development to keep the success of customers</h3>
+						<h3 class="h2">7- Continuous support even after application development to maintain customer success</h3>
 					</div>
 				</div>
 			</div>

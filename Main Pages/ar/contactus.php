@@ -35,6 +35,11 @@
 					</p>
 				</div>
 			</div>
+            <div class="map col-xs-12">
+                <div id="map">
+                    
+                </div>
+            </div>
 		</div>
 	</div>
 </div>

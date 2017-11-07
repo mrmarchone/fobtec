@@ -1,5 +1,6 @@
 <?php include"header.php";?>
 <?php include"nav.php";?>
+<?php include"../../admin/connect.php";?>
         <!--start Header-->
         <div class="header col-xs-12 padding40">
             <div class="container">
@@ -16,6 +17,35 @@
             </div>
         </div>
         <!--end Header-->
+  <!--start news slider-->
+        <div class="newsslider col-xs-12">
+            <div class="container">
+                <div class="row">
+                    <h2 class="h1 text-center">News</h2>
+                    <div class="owl-carousel owl-theme">
+                        <?php
+                        $stmt = $con->prepare("SELECT * FROM blogpage ORDER BY ID DESC LIMIT 10");
+                        $stmt->execute();
+                        $row = $stmt->fetchAll();
+                        foreach ($row as $key => $value) {
+                            echo '<div class="item">';
+                            echo '<div>';
+                            if (!file_exists('../../admin/images/' . $value['img'])) {
+                                echo '<img class="img-responsive img-thumbnail" src="../../admin/images/white2.png">';
+                            } else {
+                                echo '<img class="img-responsive img-thumbnail" src="../../images/' . $value['img'] . '">';   
+                            }
+                            echo '<h3 class="text-center">' . $value['title'] . '</h3>';
+                            echo '<p class="lead text-center">' . $value['details'] . '</p>';
+                            echo '</div>';
+                            echo '</div>';
+                        }
+                        ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end news slider-->
         <!--start box-->
         <div class="box col-xs-12">
             <div class="container">
@@ -168,46 +198,6 @@
                         <button>Learn More</button>
                     </div>
                 </div>
-                <div class="boxes col-md-3 col-sm-6 col-xs-12 text-center">
-                    <div class="contain">
-                        <h2 class="h1"><i class="fa fa-pie-chart fa-3x" aria-hidden="true"></i></h2>
-                        <h4 class="h3">About Us</h4>
-                        <br>
-                        <p class="lead">A Wide range of industry areas</p>
-                        <br>
-                        <button>Learn More</button>
-                    </div>
-                </div>
-                <div class="boxes col-md-3 col-sm-6 col-xs-12 text-center">
-                    <div class="contain">
-                        <h2 class="h1"><i class="fa fa-pie-chart fa-3x" aria-hidden="true"></i></h2>
-                        <h4 class="h3">About Us</h4>
-                        <br>
-                        <p class="lead">A Wide range of industry areas</p>
-                        <br>
-                        <button>Learn More</button>
-                    </div>
-                </div>
-                <div class="boxes col-md-3 col-sm-6 col-xs-12 text-center">
-                    <div class="contain">
-                        <h2 class="h1"><i class="fa fa-pie-chart fa-3x" aria-hidden="true"></i></h2>
-                        <h4 class="h3">About Us</h4>
-                        <br>
-                        <p class="lead">A Wide range of industry areas</p>
-                        <br>
-                        <button>Learn More</button>
-                    </div>
-                </div>
-                <div class="boxes col-md-3 col-sm-6 col-xs-12 text-center">
-                    <div class="contain">
-                        <h2 class="h1"><i class="fa fa-pie-chart fa-3x" aria-hidden="true"></i></h2>
-                        <h4 class="h3">About Us</h4>
-                        <br>
-                        <p class="lead">A Wide range of industry areas</p>
-                        <br>
-                        <button>Learn More</button>
-                    </div>
-                </div>
             </div>
         </div>
         <!--end Home-->
@@ -266,20 +256,6 @@
             </div>
         </div>
         <!--end Important Section-->
-        <!--start Success-->
-        <div class="success col-xs-12">
-            <div class="container">
-                <div class="row">
-                    <div class="paragraph col-xs-12 text-center">
-                        <img src="images/logo.jpg" class="img-responsive" width="300px" style="margin:auto">
-                        <h2 class="h1">SUCCEED WITH US!</h2>
-                        <h4>WE TAKE CARE OF YOUR MONEY</h4>
-                        <button>READ MORE</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--end Success-->
         <!--Choose Us-->
         <div class="choose col-xs-12">
             <div class="container">
@@ -316,96 +292,6 @@
             </div>
         </div>
         <!--end Choose us-->
-        <!--start What-->
-        <div class="what col-xs-12">
-            <div class="container">
-                <div class="row">
-                    <h2 class="h1">WHAT WE DO</h2>
-                    <br>
-                    <div class="sections col-md-3 col-xs-12">
-                        <img src="images/Screenshot%20(65).png" class="img-responsive">
-                        <h4>Give New Ides</h4>
-                        <p class="lead">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercilaborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                        </p>
-                    </div>
-                    <div class="sections col-md-3 col-xs-12">
-                        <img src="images/Screenshot%20(65).png" class="img-responsive">
-                        <h4>Give New Ides</h4>
-                        <p class="lead">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercilaborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                        </p>
-                    </div>
-                    <div class="sections col-md-3 col-xs-12">
-                        <img src="images/Screenshot%20(65).png" class="img-responsive">
-                        <h4>Give New Ides</h4>
-                        <p class="lead">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercilaborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                        </p>
-                    </div>
-                    <div class="sections col-md-3 col-xs-12">
-                        <img src="images/Screenshot%20(65).png" class="img-responsive">
-                        <h4>Give New Ides</h4>
-                        <p class="lead">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercilaborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--end What-->
-        <!--service-->
-        <div class="serv col-xs-12">
-            <div class="container">
-                <div class="row">
-                    <h2 class="h1">BEST SERVICE FOR BEST CLIENTS</h2>
-                    <div class="div col-xs-12">
-                        <h3>SALES ANALYZIS</h3>
-                        <div class="metter">
-                            <div class="submeter1">
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="div col-xs-12">
-                        <h3>SALES ANALYZIS</h3>
-                        <div class="metter">
-                            <div class="submeter2">
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="div col-xs-12">
-                        <h3>SALES ANALYZIS</h3>
-                        <div class="metter">
-                            <div class="submeter3">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--end Service-->
-        <!--get in touch-->
-        <div class="get col-xs-12">
-            <div class="container">
-                <div class="row">
-                    <h2>GET IN TOUCH</h2>
-                    <br>
-                    <form class="col-xs-12">
-                        <input type="text" placeholder="Name" class="col-xs-12">
-                        <br>
-                        <input type="email" placeholder="Email" class="col-xs-12">
-                        <br>
-                        <textarea placeholder="Message" class="col-xs-12"></textarea>
-                        <br>
-                        <button>SEND MESSAGE</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <!--end get-->
         <div class="clearfix"></div>
 <?php include"sitemap.php";?>
 <?php include"footer.php";?>

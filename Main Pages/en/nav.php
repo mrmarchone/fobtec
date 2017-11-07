@@ -8,53 +8,52 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="" href="home.php"><img src="images/white.png" class="img-responsive" width="70px" style="margin-top: 5px"></a>
+      <a class="" href="home.php">
+          <img src="images/white.png" class="img-responsive pull-left" width="150px" style="margin-top: 5px">
+        </a>
+      <div class="clearfix"></div>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="index.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="index.php">Our Vision</a></li>
-            <li><a href="index.php">Our Message</a></li>
-            <li><a href="index.php">Strategy</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
+        <li><a href="index.php">Home</a></li>
+          <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About us<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="about.php">Our values</a></li>
-            <li><a href="about.php">How we work</a></li>
+            <li><a href="about.php" class="text-justify">Our Values</a></li>
+            <li><a href="about.php" class="text-justify">How we work</a></li>
+            <li><a href="team.php" class="text-justify">Management Team</a></li>
+            <li><a href="team2.php" class="text-justify">Experts and consultants</a></li>
           </ul>
         </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our services<span class="caret"></span></a>
+        <li><a href="solutions.php">Solutions</a></li>
+        <li><a href="customer.php">Customer</a></li>
+          <li class="dropdown">
+          <a href="service.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="service.php">Enterprise Resource Planning System (ERP)</a></li>
-            <li><a href="service.php">Customer Relationship Management Systems (CRM)</a></li>
-            <li><a href="service.php">Digital Marketing</a></li>
-            <li><a href="service.php">IT Outsourcing</a></li>
-            <li><a href="service.php">Digital Transformation</a></li>
-            <li><a href="service.php">System Implementation</a></li>
-            <li><a href="service.php">Enhance Electronic</a></li>
-            <li><a href="service.php">Business Operation Improvement</a></li>
-            <li><a href="service.php">Improve Workflow Procedures</a></li>
-            <li><a href="service.php">Market and feasibility Studies</a></li>
-            <li><a href="service.php">Business Solution for Corporate</a></li>
+            <li><a href="service.php" class="text-justify">All Services</a></li>
+            <li><a href="serviceone.php" class="text-justify">Resource Management Systems and Customer Relationships</a></li>
+            <li><a href="servicetwo.php" class="text-justify">Digital transformation</a></li>
+            <li><a href="servicethree.php" class="text-justify">Banking solutions and electronic payment systems</a></li>
+            <li><a href="servicefour.php" class="text-justify">
+Support and management of technology systems for customers</a></li>
+            <li><a href="servicefive.php" class="text-justify">Develop processes and improve business processes</a></li>
+            <li><a href="servicesix.php" class="text-justify">
+Digital Marketing</a></li>
+            <li><a href="serviceseven.php" class="text-justify">
+Feasibility studies and market studies</a></li>
+            <li><a href="serviceeight.php" class="text-justify">Corporate Business Solutions</a></li>
           </ul>
         </li>
-        <li><a href="solutions.php">Our solutions</a></li>
-        <li><a href="blog.php">Blog</a></li>
-        <li><a href="customer.php">Our customer</a></li>
-        <li><a href="team.php">Our team</a></li>
+        <li><a href="ourpartners.php">Partners</a></li>
         <li><a href="contactus.php">Contact us</a></li>
+        <li><a href="blog.php">Blog</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Languages<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="../en">English</a></li>
-            <li><a href="../ar">Arabic</a></li>
+            <li><a href="../en" class="text-justify">English</a></li>
+            <li><a href="../ar" class="text-justify">Arabic</a></li>
           </ul>
         </li>
       </ul>

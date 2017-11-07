@@ -17,7 +17,7 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $_SESSION['username'];?> <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="../Main Pages/en">Home</a></li>
-            <li><a href="#">Settings</a></li>
+            <li><a href="dashboard.php">Settings</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="logout.php">Logout</a></li>
           </ul>
