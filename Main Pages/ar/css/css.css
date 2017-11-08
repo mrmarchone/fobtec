@@ -1,19 +1,44 @@
 /*start header*/
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
-@font-face {
-    src:url(Fonts/GESSTwoMedium-Medium.otf);
-    font-family: arabic;
-    font-weight: bolder;
+@import url('https://fonts.googleapis.com/css?family=Amiri');
+padding50{
+    padding: 50px 0;
 }
-
+body{
+        font-family: 'Amiri' !important;
+}
 *{
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: arabic;
+}
+.navbar-inverse .navbar-toggle {
+    border-color: #333;
+    margin-top: 5%;
+}
+.dropdown-menu > li > a {
+    font-size: X-large;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #ffffff;
+}
+.container-fluid {
+    border-top:5px solid red;
+}
+.nav {
+    font-size: 27px;
+}
+.navbar-nav{
+    padding: 1%
+}
+.navbar-inverse .navbar-nav > li{
+    padding: 1% 0;
+}
+.navbar-inverse .navbar-nav > li:hover{
+    background-color: red
 }
 .padding40{
-     padding-top: 70px;
+     padding-top: 130px;
      padding-bottom: 20px
 }
 .header{
@@ -303,6 +328,7 @@
     padding: 2%;
     border-top:10px solid lightblue;
     margin-bottom: 5%;
+    height: 120px
 }
 .service .sectionone h1{
     font-size: 30px;
@@ -322,7 +348,8 @@
 }
 .footer ul li a{
     color: red;
-    transition: all 0.5s linear
+    transition: all 0.5s linear;
+    font-size: 23px
 }
 .footer ul li a:hover{
     text-decoration: none;
@@ -331,7 +358,7 @@
 /*end footer*/
 /*start contact*/
 .contact {
-    background-color: #222222;
+    background-color: #545454
 }
 .contact .form form input:not([type=submit]){
     margin-bottom: 20px;
@@ -343,13 +370,13 @@
 }
 .contact .address{
     color: #f5f5f5;
-    margin-top: 100px
+    margin-top: 120px;
 }
 .contact .address .feat{
-    padding: 1%;
     border:1px solid lightblue;
     margin-bottom: 10px;
     border-radius: 20px;
+    padding: 0.2%
 }
 /*end contact*/
 /*fonts*/
@@ -411,3 +438,24 @@
    color: #3350b9;
 }
 /*end news*/
+/*start team*/
+.team {
+    background-color: #eee
+}
+
+.team hr{
+    border: 2px solid red
+}
+.team .persons{
+    margin-bottom: 150px
+}
+.team .persons p{
+    font-size: 23px
+}
+/*end team*/
+.success{
+    padding-top: 140px;
+}
+.success img{
+    margin-bottom: 50px
+}

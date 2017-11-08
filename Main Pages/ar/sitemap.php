@@ -1,8 +1,8 @@
 <div class="footer col-xs-12">
 	<div class="container">
 		<div class="row">
-			<div class="logo col-md-6 col-xs-12 pull-left">
-                <img src="images/white.png" class="img-responsive">
+			<div class="logo col-md-3 col-xs-12 pull-left">
+                <img src="images/white.png" class="img-responsive" width="200px">
             </div>
             <div class="list col-md-6 col-xs-12 pull-right">
                 <ul class="list-inline">

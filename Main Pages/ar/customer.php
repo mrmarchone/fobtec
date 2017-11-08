@@ -22,7 +22,9 @@
 			    </div>
 
 			    <div class="item">
-			      <img src="images/c3.jpg" alt="New York" class="img-respponsive">
+                    <a href="success.php">
+			         <img src="images/c3.jpg" alt="New York" class="img-respponsive">
+                    </a>
 			    </div>
 			  </div>
 
